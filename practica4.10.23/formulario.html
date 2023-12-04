@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <br><br>
+    <div class="Title">
+        <h1>Registro de Usuario</h1>
+    </div>
+    <form id="formulario">
+        <!-- Campos del formulario con sus respectivos span para los íconos de estado -->
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required>
+        <span class="icon" id="nombres-icon"></span><br><br>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+        <span class="icon" id="apellidos-icon"></span><br><br>
+        
+        <label for="dni">Número de DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+        <span class="icon" id="dni-icon"></span><br><br>
+        
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        <span class="icon" id="fecha_nacimiento-icon"></span><br><br>
+        
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <span class="icon" id="correo-icon"></span><br><br>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <span class="icon" id="contrasena-icon"></span><br><br>
+        
+        <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" required>
+        <label for="terminos_condiciones">Aceptar los Términos y Condiciones</label><br><br>
+        
+        <input type="submit" id="btnCrear" value="Enviar">
+        <a class="logueo" href="index.html">Logueo</a>
+    </form>
+    <script src="./JS/validacion.js"></script>
+    <!-- Tabla para mostrar los registros -->
+    <table id="tablaRegistros" style="display: none;">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>DNI</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Correo electrónico</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla">
+            <!-- Aquí se agregarán las filas de los registros -->
+        </tbody>
+    </table>
+    <script src="./JS/registro.js"></script>
+</body>
+
+</html>
